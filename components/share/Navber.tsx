@@ -1,25 +1,25 @@
-import Link from "next/link";
-import { buttonVariants } from "../ui/Button";
+import Link from 'next/link';
+import { buttonVariants } from '../ui/Button';
 
 const Navber = () => {
   return (
-    <header className="h-20 border-b border-gray flex items-center bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-[100]">
-      <div className="wrapper grid grid-cols-3 gap-20 ">
+    <header className='fixed left-0 right-0 top-0 z-[100] flex h-20 items-center border-b border-gray bg-white/80 backdrop-blur-lg'>
+      <div className='wrapper grid grid-cols-3 gap-20 '>
         {/* left nav  */}
         <nav>
-          <ul className="flex justify-start items-center gap-5 h-full ">
+          <ul className='flex h-full items-center justify-start gap-5 '>
             <li>
-              <Link href={"/#packages"} className="link-item">
+              <Link href={'/#packages'} className='link-item'>
                 Packages
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="link-item">
+              <Link href={'/'} className='link-item'>
                 Link 2
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="link-item">
+              <Link href={'/'} className='link-item'>
                 Link 3
               </Link>
             </li>
@@ -28,35 +28,35 @@ const Navber = () => {
 
         {/* Mid nav  */}
         <nav>
-          <ul className="flex justify-center">
+          <ul className='flex justify-center'>
             <li>
               <Link
-                href={"/"}
-                className="lowercase text-4xl font-bold text-pink"
+                href={'/'}
+                className='text-4xl font-bold lowercase text-pink'
               >
-                MiMosa.
+                Thirsty
               </Link>
             </li>
           </ul>
         </nav>
         {/* right nav  */}
         <nav>
-          <ul className="flex gap-5 justify-end items-center">
+          <ul className='flex items-center justify-end gap-5'>
             <li>
-              <Link href={"/"} className="link-item">
+              <Link href={'/'} className='link-item'>
                 Link 1
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="link-item">
+              <Link href={'/'} className='link-item'>
                 Link 2
               </Link>
             </li>
             <li>
               <Link
-                href={"/user/signin"}
+                href={'/user/signin'}
                 className={buttonVariants({
-                  variant: "valentine",
+                  variant: 'valentine',
                 })}
               >
                 Sign in
